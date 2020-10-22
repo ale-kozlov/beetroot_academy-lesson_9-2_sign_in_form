@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <title>Sign In Form</title>
+</head>
+
+<body>
+<header>
+  <h1 class="visually-hidden">Header Information</h1>
+</header>
+
+<main>
+  <h1 class="visually-hidden">Main information</h1>
+  <section class="form">
+
+      <input type="radio" name="tabs" id="sign-in" checked/>
+      <label class="form__tabs__toggle sign-toggle" for="sign-in">Sign in</label>
+      <input type="radio" name="tabs" id="join-us"/>
+      <label class="form__tabs__toggle join-toggle" for="join-us">Join us</label>
+
+    <div class="tabs">
+      <form class="form__sign-in" action="#" method="post">
+        <div class="form__controls">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" minlength="4" required>
+          <div class="form__error">error</div>
+        </div>
+        <div class="form__controls">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" minlength="8" required>
+          <div class="form__error">error</div>
+        </div>
+        <div class="form__controls checkbox">
+          <input type="checkbox" id="checkbox" name="checkbox" checked>
+          <label for="checkbox">Keep me sign in</label>
+        </div>
+        <button type="submit">Sign in</button>
+        <div class="form__additional">
+          <a href="javascript:void(0)" class="form__link">Forgot password</a>
+          <label class="form__link" for="join-us">Create an account</label>
+        </div>
+      </form>
+    </div>
+
+    <div class="tabs">
+      <form class="form__join-in" action="#" method="post">
+        <div class="form__controls">
+          <label for="usernameJoin">Username</label>
+          <input type="text" name="username" id="usernameJoin" minlength="4" required>
+          <div class="form__error">error</div>
+        </div>
+        <div class="form__controls">
+          <label for="passwordJoin">Password</label>
+          <input type="password" name="password" id="passwordJoin" minlength="8" required>
+          <div class="form__error">error</div>
+        </div>
+        <div class="form__controls">
+          <label for="repeat-passwordJoin">Password</label>
+          <input type="password" name="repeat-password" id="repeat-passwordJoin" minlength="8" required>
+          <div class="form__error">error</div>
+        </div>
+        <button type="submit">Join us</button>
+      </form>
+    </div>
+
+  </section>
+</main>
+
+<footer>
+  <h2 class="visually-hidden">Additional information</h2>
+</footer>
+
+</body>
+
+</html>
